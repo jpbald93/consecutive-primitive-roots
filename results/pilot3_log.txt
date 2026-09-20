@@ -1,0 +1,3 @@
+Mod-840: chi2=719.8 on 633 df, wdelta=-0.000473
+Split-half H1: chi2=440.8, wdelta=-0.000963
+Split-half H2: chi2=439.7, wdelta=-0.000936

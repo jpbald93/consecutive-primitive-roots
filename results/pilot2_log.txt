@@ -1,0 +1,1 @@
+Mod-120 conditioning: 145 cells, chi2=789.2, wdelta=-0.001055

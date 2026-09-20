@@ -1,0 +1,11 @@
+PASS: canonical, full-package and source-ZIP LaTeX identical.
+PASS: canonical/full/current/named PDF identical, 10 pages.
+PASS: joint table, pair count, delta and excluded-gap counts match corrected JSON.
+PASS: supplementary Artin total corrected to 19,016,617.
+PASS: Baker–Pollack unconditional attribution and cautious conditioning/long-run wording.
+PASS: anonymous PDF text lacks author, email, ORCID and identifying repository URL; metadata Author empty.
+PASS: source ZIP extracted and compiled twice.
+PASS: all 9,589 small-bound CSV rows checked with SymPy; zero errors.
+PASS: small-bound analysis now completes (empty reporting cells are NaN).
+PASS: publication source ZIP extracted; named and anonymous compiled to stable cross-references.
+NOTE: minor overfull/underfull box warnings remain; no unresolved references.

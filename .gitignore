@@ -1,0 +1,12 @@
+# build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+lean/.lake/
+__pycache__/
+# large regenerable data
+*.csv
+data_*.csv
+shard_*.json
+s1*_*.json

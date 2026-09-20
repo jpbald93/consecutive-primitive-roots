@@ -1,0 +1,22 @@
+Title:           
+Subject:         
+Keywords:        
+Author:          
+Creator:         
+Producer:        pdfTeX-1.40.25
+CreationDate:    Sun Sep 20 16:11:23 2026 EDT
+ModDate:         Sun Sep 20 16:11:23 2026 EDT
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           12
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       369449 bytes
+Optimized:       no
+PDF version:     1.5

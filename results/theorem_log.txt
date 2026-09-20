@@ -1,0 +1,7 @@
+(i) Residue-class check: (2|p) flip under p -> p+20 (mod 8), (5|p) fixed (mod 5)
+  PASS: (2|.) flips for every residue class; (5|.) invariant
+(ii) Empirical Legendre flip, prime pairs gap ≡ 20 (mod 40), p < 10000000
+  consecutive pairs with gap≡20 (mod 40): 23,956
+  Legendre flip failures: 0
+(iii) direct both-Artin among 479 sampled pairs: 0
+THEOREM VERIFIED
