@@ -110,8 +110,15 @@ predict. The phenomenon, which they explain conjecturally via the
 Hardy--Littlewood prime $k$-tuple conjectures~\cite{HardyLittlewood1923}, decays
 slowly and is prominent at the scales accessible to computation.
 
-This paper asks a question that, to our knowledge, has not been raised before:
-\emph{are the Artin statuses of consecutive primes correlated?} Since the
+This paper asks a correlational question: \emph{are the Artin statuses of
+consecutive primes correlated?} The adjacent question of when two primes at a
+fixed even shift can \emph{both} be Artin primes was taken up by Tinkov\'a,
+Waxman and Zindulka~\cite{TinkovaWaxmanZindulka2023}, whose Theorem~1.1
+identifies shift--base pairs admitting no such pair; the exclusion law of
+Theorem~\ref{thm:exclusion} below is the base-$10$ instance of that
+phenomenon and we claim no priority for it. The correlation measured here,
+over consecutive primes rather than a fixed shift, appears not to have been
+studied. Since the
 Artin property of $p$ is governed by the arithmetic of $p - 1$ (which primes
 $q$ divide it), and since the residues of consecutive primes modulo small $q$
 are correlated by~\cite{LOS2016}, one expects \emph{some} induced dependence
@@ -202,7 +209,7 @@ If $10$ is a quadratic residue mod $p$ then its order divides $(p-1)/2$, so a
 QR is never a primitive root; $\Lsym{10}{p} = -1$ is a necessary (not
 sufficient) condition for the Artin property.
 
-\begin{theorem}[Exclusion law for gaps $\equiv 20 \pmod{40}$]
+\begin{theorem}[Exclusion law for gaps $\equiv 20 \pmod{40}$; cf.\ {\rm\cite[Thm.~1.1]{TinkovaWaxmanZindulka2023}}]
 	\label{thm:exclusion}
 	Let $p$ and $p' = p + g$ be primes with $p, p' > 5$ and $g > 0$,
 	$g \equiv 20 \pmod{40}$.
@@ -913,6 +920,12 @@ a single machine; it is also available from the author on request.
 	\emph{On Artin's conjecture on average and short character sums},
 	Bull. Lond. Math. Soc. \textbf{57} (2025), no.~8, 2429--2443;
 	\texttt{arXiv:2412.13355}.
+
+	\bibitem{TinkovaWaxmanZindulka2023}
+	M.~Tinkov\'a, E.~Waxman, and M.~Zindulka,
+	\emph{Artin twin primes},
+	J. Number Theory \textbf{247} (2023), 274--304;
+	\texttt{arXiv:2010.15988}.
 
 	\bibitem{LOS2016}
 	R.~J. Lemke~Oliver and K.~Soundararajan,
