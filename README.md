@@ -72,13 +72,21 @@ python3 code/verify_sieve_small_bound.py     # sieve output vs SymPy at small bo
 
 ```bash
 cd lean
-lake exe cache get    # mathlib binary cache
+lake exe cache get    # mathlib binary cache — do this first
 ./gate.sh             # => PASS (11 theorems, standard axioms only)
 ```
+
+Fetch the cache before building. Without it, `lake` compiles Mathlib from
+source, which takes hours and tens of gigabytes.
 
 `Artin/Exclusion.lean` proves the character statement on `ZMod 40`;
 `Artin/Bridge.lean` connects it to Mathlib's genuine `legendreSym` via the
 second supplementary law and quadratic reciprocity.
+
+The two proof files here are byte-identical to those in the author's full
+development, where the equivalent gate passes over a larger set of theorems.
+The `EXPECTED_MIN` in this repository's `gate.sh` is set to 11, the number of
+non-private declarations in these two files.
 
 `gate.sh` checks three things: the sources contain no `sorry`, `axiom` or
 `native_decide`; the build succeeds (by exit status, not by matching a success
