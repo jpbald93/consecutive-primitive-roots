@@ -833,14 +833,15 @@ public, commercial, or not-for-profit sectors.
 \section*{Data availability}
 All code required to reproduce every number in this paper is supplied in the
 accompanying reproduction package (C segmented sieve, Python analysis scripts,
-figure script, and raw output logs). The corrected code, manuscript and summary
-outputs are at \url{https://github.com/jpbald93/consecutive-artin}; the
-full per-prime CSV is not included in the public repository. The sieve limit is
-configurable via a command-line argument; within the Paper-1 reproduction
-pipeline described above, the scripts accept their input/output paths as
-arguments and default to repository-relative locations. This statement is
-scoped to that pipeline and does not extend to other scripts that may be
-present in the repository for related projects.
+figure script, and raw output logs). The code, manuscript, results and Lean
+development are at
+\url{https://github.com/jpbald93/consecutive-primitive-roots}, a repository
+dedicated to this paper; the full per-prime CSV is not included there. That
+package contains both implementations of the census described above, so a
+reader can repeat the independent check as well as the original computation.
+The sieve limit is configurable via a command-line argument, and the scripts
+accept their input and output paths as arguments, defaulting to
+repository-relative locations.
 The per-prime dataset itself ($1.8$~GB CSV covering all $50{,}847{,}531$
 primes from $7$ to $999{,}999{,}937$: gap, $\omega(p-1)$, Artin indicator,
 and small residues for each prime) is not deposited because of its size, but
