@@ -44,16 +44,7 @@ def main():
         paths = args or glob.glob("shard_*.json")
     rows = load(paths)
 
-    # The PUBLISHED dict below is the 10^9 census. Comparing a run at any other
-    # bound against it is meaningless, so say so rather than reporting a FAIL
-    # that only means "different bound".
-    hi = max(r["hi"] for r in rows)
-    if hi != 1000000000:
-        print(f"note: shards cover [7, {hi:,}], but the stored reference census is "
-              f"for 10^9.\n      Reporting totals only; no pass/fail comparison is "
-              f"possible at this bound.\n")
-
-    # contiguity check: ranges must tile the range with no gap or overlap
+    # contiguity check: ranges must tile [7, 1e9] with no gap or overlap
     for a, b in zip(rows, rows[1:]):
         if a["hi"] + 1 != b["lo"]:
             raise SystemExit(f"non-contiguous: {a['hi']} then {b['lo']}")
@@ -103,17 +94,6 @@ def main():
 
     print(f"shards: {len(rows)}   boundary pairs stitched: {boundary}")
     print()
-    if hi != 1000000000:
-        print(f"{'quantity':<16} {'measured':>22}")
-        for k in ("n_primes", "n_artin", "n_pairs", "g2060_pairs", "g2060_both"):
-            print(f"{k:<16} {got[k]:>22,}")
-        print(f"{'table':<16} {str(got['table']):>22}")
-        print(f"{'delta':<16} {got['delta']:>22.12f}")
-        print(f"{'chi2':<16} {got['chi2']:>22.6f}")
-        json.dump(got, open("independent_audit_result.json", "w"), indent=2)
-        print("\nwrote independent_audit_result.json")
-        return 0
-
     print(f"{'quantity':<16} {'independent':>22} {'published':>22}  match")
     ok = True
     for k in ("n_primes", "n_artin", "n_pairs", "g2060_pairs", "g2060_both"):
