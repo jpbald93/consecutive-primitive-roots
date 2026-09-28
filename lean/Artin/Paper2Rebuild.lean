@@ -78,7 +78,7 @@ theorem main_identity {α : Type*} [DecidableEq α] (U : Finset α) (f h : α �
   rw [Finset.sum_congr rfl expand]
   simp [Finset.sum_add_distrib, Finset.sum_sub_distrib]
 
-/-- Restated in the paper's notation: with `T = |U|`, `A = ∑ f`, `B = ∑ h`,
+/-- Restated in the paper's symbols: with `T = |U|`, `A = ∑ f`, `B = ∑ h`,
 `S = ∑ f * h`, and `N` the doubly-negative count, `4N = T - A - B + S`. -/
 theorem counting_identity {α : Type*} [DecidableEq α] (U : Finset α) (f h : α → ℤ)
     (hf : ∀ r ∈ U, f r = -1 ∨ f r = 1) (hh : ∀ r ∈ U, h r = -1 ∨ h r = 1)
