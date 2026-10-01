@@ -161,7 +161,9 @@ expressed in terms of Mathlib's genuine `legendreSym`, not a bespoke definition:
 
 `lean/gate.sh` checks that the build succeeds, that no `sorry`, `admit`, `axiom`,
 or `native_decide` appears, and that every theorem depends only on Lean's three
-standard axioms. Expected output: `PASS (19 theorems, standard axioms only)`.
+standard axioms. Expected output: `PASS (34 theorems, standard axioms only)`.
+
+`scratch/Satisfiable.lean` gives, for every theorem with hypotheses, a Lean-checked example showing the hypotheses can all be met (compile with `lake env lean scratch/Satisfiable.lean`).
 
 Scope limits are stated in `lean/README_LEAN.md`: nothing empirical is
 formalized (not `δ = -0.01414`, the z-scores, the channel decompositions, or any
